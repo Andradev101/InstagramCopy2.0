@@ -1,16 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-button{
-    appearance: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    border: 0;
-}
 .header{
     position: fixed;
 
@@ -38,6 +25,9 @@ button{
     outline: none;
     font-size: 13px;
 }
+.headerBtns{
+    display: flex;
+}
 .headerBtns a, .headerBtns button{
     display:inline-block;
     min-width: 22px;
@@ -45,52 +35,4 @@ button{
 }
 #headerSearch{
     height: 28px;
-}
-
-body{
-    display: flex;
-    justify-content: center;
-}
-#maindiv{
-    width: 100%;
-    margin: 0 15%;
-    margin-top: 54px;
-    height: 3000px;
-    background-color: rgb(187, 187, 187);
-
-    display: flex;
-}
-.postscontainer{
-    width: 65%;
-    height: 100%;
-    background-color: red;
-}
-.postscontainer .storiesdiv{
-    width: 100%;
-    height: 6%;
-    background-color: darkolivegreen;
-}
-.postscontainer .post{
-    width: 100%;
-    height: 30%;
-    background-color: darkorange;
-}
-.suggestionscontainer{
-    width: 35%;
-    height: 20%;
-    background-color: blue;
-}
-@media screen and (max-width:1000px) {
-    #maindiv{
-        width: 75%;
-    }
-    .header{
-        padding: 0 10%;
-    }
-    .suggestionscontainer{
-        display: none;
-    }
-    .postscontainer{
-        width: 100%;
-    }
 }

@@ -1,0 +1,41 @@
+#maindiv{
+    width: 100%;
+    margin: 0 15%;
+    margin-top: 54px;
+    height: 3000px;
+
+    display: flex;
+}
+.postscontainer{
+    width: 65%;
+    height: 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.storiesdiv{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    border: 1px solid rgb(199, 199, 199);
+    margin: 10px 0 20px 0;
+}
+.suggestionscontainer{
+    width: 35%;
+    height: 20%;
+    background-color: blue;
+}
+@media screen and (max-width:1000px) {
+    .header{
+        padding: 0 10%;
+    }
+    #maindiv{
+        width: 75%;
+    }
+    .suggestionscontainer{
+        display: none;
+    }
+    .postscontainer{
+        width: 100%;
+    }
+}
