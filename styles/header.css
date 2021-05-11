@@ -15,9 +15,10 @@ button{
     position: fixed;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
+    padding: 0 15%;
     width: 100%;
     height: 54px;
     border-bottom: 1px solid rgb(206, 206, 206);
@@ -45,8 +46,51 @@ button{
 #headerSearch{
     height: 28px;
 }
-#aaaaa{
-    height: 3000px;
+
+body{
+    display: flex;
+    justify-content: center;
+}
+#maindiv{
     width: 100%;
-    background-color: rgb(179, 179, 179);
+    margin: 0 15%;
+    margin-top: 54px;
+    height: 3000px;
+    background-color: rgb(187, 187, 187);
+
+    display: flex;
+}
+.postscontainer{
+    width: 65%;
+    height: 100%;
+    background-color: red;
+}
+.postscontainer .storiesdiv{
+    width: 100%;
+    height: 6%;
+    background-color: darkolivegreen;
+}
+.postscontainer .post{
+    width: 100%;
+    height: 30%;
+    background-color: darkorange;
+}
+.suggestionscontainer{
+    width: 35%;
+    height: 20%;
+    background-color: blue;
+}
+@media screen and (max-width:1000px) {
+    #maindiv{
+        width: 75%;
+    }
+    .header{
+        padding: 0 10%;
+    }
+    .suggestionscontainer{
+        display: none;
+    }
+    .postscontainer{
+        width: 100%;
+    }
 }
