@@ -1,5 +1,6 @@
 const header = document.querySelectorAll(".header")[0];
 const maindiv = document.querySelectorAll("#maindiv")[0];
+const storiesContainer = document.querySelectorAll(".storiesdiv")[0];
 
 header.insertAdjacentHTML('afterbegin',
     `
@@ -18,3 +19,12 @@ header.insertAdjacentHTML('afterbegin',
         </div>
     `
 );
+
+//stories div create iteration
+let storiesDiv = document.createElement("div");
+storiesDiv.classList.add("storiesUser")
+for (let i = 0; i < 6; i++) {
+    let cloneDup = storiesDiv.cloneNode(true);
+    storiesContainer.appendChild(cloneDup);
+}
+console.log(storiesContainer);
