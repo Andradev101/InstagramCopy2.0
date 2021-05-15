@@ -7,7 +7,7 @@ postDiv.insertAdjacentHTML('afterbegin',    //these are the elements within the 
     `
     <div class="postHeader"></div>
     <div class="postPhoto">
-        <img src="/mockdata/images/SePYow.jpg" alt="" srcset="/mockdata/images/SePYow.jpg">
+        <img src="/mockdata/images/SePYow.jpg" alt="" srcset="https://picsum.photos/1270/720">
     </div>
     <div class="postReactions"></div>
     <div class="postComments"></div>

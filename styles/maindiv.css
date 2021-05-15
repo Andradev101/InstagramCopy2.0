@@ -1,6 +1,6 @@
 #maindiv{
-    width: 100%;
-    margin: 0 15%;
+    width: 45%;
+    margin: 0 20% 0 0%;
     margin-top: 54px;
 
     display: flex;
@@ -13,8 +13,9 @@
     flex-direction: column;
 }
 .suggestionscontainer{
-    position: sticky;
+    position: fixed;
     top: 68px;
+    left: 60%;
     width: 300px;
     height: 400px;
     background-color: blue;
@@ -22,6 +23,9 @@
 @media screen and (max-width:1000px) {
     #maindiv{
         min-width: 360px;
+        width: 60%;
+        margin: 0 5%;
+        justify-content: center;
     }
     .suggestionscontainer{
         display: none;
@@ -29,5 +33,6 @@
     .postscontainer{
         width: 100%;
         margin: 0 10px;
+        margin-top: 54px;
     }
 }

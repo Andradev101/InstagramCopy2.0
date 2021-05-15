@@ -3,16 +3,14 @@
     height: 100px;
     background-color: white;
     border: 1px solid var(--border-color);
-    border-radius: 5px;
+    border-radius: 3px;
     margin: 15px 0 10px 0;
     padding: 10px;
     
     display: grid;
-    grid-template-columns: repeat(10, 70px);
-    grid-row-gap: auto;
+    grid-template-columns: repeat(4, 1fr);
     
 }
 .storiesUser{
     outline: 1px solid black;
-    height: 70px;
 }

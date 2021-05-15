@@ -22,9 +22,11 @@ header.insertAdjacentHTML('afterbegin',
 
 //stories div create iteration
 let storiesDiv = document.createElement("div");
-storiesDiv.classList.add("storiesUser")
-for (let i = 0; i < 6; i++) {
+storiesDiv.classList.add("storiesUser");
+for (let i = 0; i < 4; i++) {
     let cloneDup = storiesDiv.cloneNode(true);
     storiesContainer.appendChild(cloneDup);
 }
-console.log(storiesContainer);
+
+storiesUser = document.querySelectorAll(".storiesUser");
+let div = document.createElement("div");
