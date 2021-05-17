@@ -20,30 +20,19 @@ postDiv.insertAdjacentHTML('afterbegin',    //these are the elements within the 
         <img src="/mockdata/images/SePYow.jpg" alt="" srcset="https://picsum.photos/1280/720">
     </div>
     <div class="postReactions">
-        <button class="reactionBtn">H</button>
-        <button class="reactionBtn">C</button>
-        <button class="reactionBtn">I</button>
-        <button class="reactionBtn lastChild">B</button>
+        <button class="reactionBtn heart">H</button>
+        <button class="reactionBtn chat">C</button>
+        <button class="reactionBtn inbox">I</button>
+        <button class="reactionBtn bookmark" lastChild">B</button>
     </div>
     <div class="postComments"></div>
     `
 );
+
 //postscontainer.append(postDiv)
 const post = document.querySelectorAll(".post")[0];
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 10; i++) {
     let clone = postDiv.cloneNode(true);     //clone the div node and all it childs
     postscontainer.appendChild(clone);       //add it to the page
 }
-
-//adding event to every post header btns
-const moreOptnsBtn = document.querySelectorAll(".postBtn");
-const reactionBtns = document.querySelectorAll(".reactionBtn");
-
-moreOptnsBtn.forEach(element => {
-    element.addEventListener("click", () => {console.log("acessando botao opcoes");})
-});
-reactionBtns.forEach(element => {
-    element.addEventListener("click", () => {console.log("acessando botao reacao");})
-});
-console.log(moreOptnsBtn);
