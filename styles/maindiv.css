@@ -1,12 +1,11 @@
 #maindiv{
-    width: 45%;
+    width: 50%;
     margin: 0 20% 0 0%;
     margin-top: 54px;
 
     display: flex;
 }
 .postscontainer{
-    width: 90%;
     height: 100%;
     margin: 0 10px;
     display: flex;
@@ -15,15 +14,16 @@
 .suggestionscontainer{
     position: fixed;
     top: 68px;
-    left: 60%;
+    left: 65%;
     width: 300px;
     height: 400px;
-    background-color: blue;
+    background-color: rgb(139, 139, 139);
 }
 @media screen and (max-width:1000px) {
     #maindiv{
         min-width: 360px;
-        width: 60%;
+        width: 80%;
+        max-width: initial;
         margin: 0 5%;
         justify-content: center;
     }

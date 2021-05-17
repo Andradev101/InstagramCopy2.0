@@ -2,6 +2,7 @@ const header = document.querySelectorAll(".header")[0];
 const maindiv = document.querySelectorAll("#maindiv")[0];
 const storiesContainer = document.querySelectorAll(".storiesdiv")[0];
 
+//insert header and it to every page
 header.insertAdjacentHTML('afterbegin',
     `
         <a href="index.html">
@@ -28,5 +29,16 @@ for (let i = 0; i < 4; i++) {
     storiesContainer.appendChild(cloneDup);
 }
 
+//get all div.storiesUser and append a [div/p] within
 storiesUser = document.querySelectorAll(".storiesUser");
-let div = document.createElement("div");
+storiesUser.forEach(element => {
+    let div = document.createElement("div")
+    div.classList.add("storiesUserPhoto");
+
+    let p = document.createElement("p");
+    p.classList.add("storiesUserName");
+
+    element.append(div)
+    element.append(p)
+    p.innerText = "User"
+});
