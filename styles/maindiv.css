@@ -1,20 +1,18 @@
 #maindiv{
-    width: 50%;
-    margin: 0 20% 0 0%;
     margin-top: 54px;
 
     display: flex;
 }
 .postscontainer{
+    max-width: 700px;
     height: 100%;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
 }
 .suggestionscontainer{
-    position: fixed;
-    top: 68px;
-    left: 65%;
+    position: sticky;
+    top: 71px;
     width: 300px;
     height: 400px;
     background-color: rgb(139, 139, 139);

@@ -5,6 +5,7 @@
     align-items: center;
 
     width: 100%;
+    padding: 0 4%;
     height: 54px;
     border-bottom: 1px solid var(--border-color);
     background-color: white;
@@ -28,11 +29,20 @@
 }
 .headerBtns{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .headerBtns a, .headerBtns button{
-    display:inline-block;
-    min-width: 22px;
-    min-height: 22px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 25px;
+    margin: 0 5px;
+    color: black;
 }
 #headerSearch{
     height: 28px;

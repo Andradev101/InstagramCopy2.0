@@ -1,3 +1,6 @@
+.fa-heart{
+    font-weight: 500;
+}
 .post{
     margin: 12px 0;
     width: 100%;
@@ -58,14 +61,26 @@
     background-color: rgb(255, 255, 255);
     height: 20px;
     width: 40px;
-    font-size: 20px;
+    font-size: 10px;
 }
 /*post reaction btns*/
 .reactionBtn{
-    height: 50px;
-    width: 50px;
-    outline: 1px solid rgb(212, 212, 212);
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+.reactionBtn i{
+    font-size: 25px;
+    transition: color 0.1s ease-out;
 }
 .postReactions .lastChild{
     margin-left: auto;
+}
+@media screen and (max-width:1000px) {
+    .postPhoto{
+        min-width: initial;
+        display: flex;
+        width: 100%;
+        background-color: rgb(116, 116, 116);
+    }
 }

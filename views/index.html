@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae5df44a2a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/maindiv.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/post.css">
     <link rel="stylesheet" href="/styles/storiesDiv.css">
+    <link rel="stylesheet" href="/styles/popUpMenus.css">
     <title>Instagram</title>
 </head>
 <body>
@@ -19,12 +21,26 @@
         <div class="postscontainer">
             <div class="storiesdiv"></div>
         </div>
-        
+    <div class="suggestionscontainer"></div>   
     </div>
-    <div class="suggestionscontainer"></div> 
+   
+    
+    <div class="popUpBackGround">
+        <div class="popUpPostConfig">
+            <button class="popConfigBtns">Report</button>
+            <button class="popConfigBtns">Unfollow</button>
+            <button class="popConfigBtns">Go to post</button>
+            <button class="popConfigBtns">Share</button>
+            <button class="popConfigBtns">Copy link</button>
+            <button class="popConfigBtns">Embed</button>
+            <button class="popConfigBtns">Cancel</button>
+        </div>
+    </div>
 
     <script src="/scripts/addPrimitivefields.js"></script>
     <script src="/scripts/postIteration.js"></script>
     <script src="/scripts/postIdentifier.js"></script>
+    <script src="/scripts/popUpMenus.js"></script>
+    
 </body>
 </html>
