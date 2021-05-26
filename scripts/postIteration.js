@@ -11,7 +11,7 @@ postDiv.insertAdjacentHTML('afterbegin',    //these are the elements within the 
         <button class="postBtn">●●●</button>
     </div>
     <div class="postPhoto">
-        <img src="/mockdata/images/SePYow.jpg" alt="" srcset="https://picsum.photos/1280/720">
+        <img src="/mockdata/images/SePYow.jpg" alt="" srcset="https://picsum.photos/600/600">
     </div>
     <div class="postReactions">
         <button class="reactionBtn heart">
@@ -31,9 +31,7 @@ postDiv.insertAdjacentHTML('afterbegin',    //these are the elements within the 
     `
 );
 
-
-
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 5; i++) {
     let clone = postDiv.cloneNode(true);     //clone the div node and all it children
     postscontainer.appendChild(clone);       //add it to the page
     clone.id = "post"+[i]

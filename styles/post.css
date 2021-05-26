@@ -1,5 +1,5 @@
 .fa-heart{
-    font-weight: 500;
+    font-weight: 300;
 }
 .post{
     margin: 12px 0;
@@ -49,7 +49,6 @@
     margin-left: 5px;
     height: 100%;
     width: 40px;
-    background-color: red;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -71,7 +70,7 @@
 }
 .reactionBtn i{
     font-size: 25px;
-    transition: color 0.1s ease-out;
+    transition: color 0.2s ease-out;
 }
 .postReactions .lastChild{
     margin-left: auto;

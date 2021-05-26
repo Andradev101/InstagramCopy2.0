@@ -18,23 +18,14 @@ for (let j = 0; j < moreOptnsBtn.length; j++) {
     inboxBtn[j].id = `inboxBtn${j}`  
     bookMarkBtn[j].id = `bookMarkBtn${j}`
     
-    moreOptnsBtn[j].addEventListener("click", ()=>{popUpOpen(moreOptnsBtn[j].id);}) 
     //return the id of a button based on its index j to popUpMenus.js
+    moreOptnsBtn[j].addEventListener("click", ()=>{popUpOpen(moreOptnsBtn[j].id);}) 
     
-    heartBtn[j].addEventListener("click", ()=> {
-        //console.log(heartBtn[j].childNodes);
-        heartBtn[j].childNodes[1].style.fontWeight = 1000;
-        heartBtn[j].childNodes[1].style.color = "#FF616F";
-        heartBtn[j].childNodes[1].style.transform = "scale(1.05)";
-    })
     
+    //all these functions are located in postReactionBtns.js
+    heartBtn[j].addEventListener("click", ()=>{heartBtnActive(heartBtn[j])})
     chatBtn[j].addEventListener("click", ()=> {console.log("acessando botao chat id: "+ chatBtn[j].id);})
-    
     inboxBtn[j].addEventListener("click", ()=> {console.log("acessando botao inbox id: "+ inboxBtn[j].id);})
-    
-    bookMarkBtn[j].addEventListener("click", ()=> {
-        //console.log(bookMarkBtn[j].childNodes);
-        bookMarkBtn[j].childNodes[1].style.fontWeight = 1000;
-        bookMarkBtn[j].childNodes[1].style.transform = "scale(1.05)";
-    })
+    bookMarkBtn[j].addEventListener("click", ()=> {bookMarkBtnActive(bookMarkBtn[j])})
 }
+
